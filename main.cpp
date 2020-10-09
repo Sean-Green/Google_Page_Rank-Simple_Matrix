@@ -1,27 +1,29 @@
 #include <iostream>
 #include "matrix.hpp"
-
 int main() {
 try {
-    matrix m(2);
-    matrix n(5, 6);
-    std::cout << m << n;
-    double arr[] = {1.0, 2.0, 3.0001, 4.0};
-    double arr2[] = {1.0, 2.0, 3.0, 4.0};
-    matrix foo(arr, 4);
-    matrix bar(arr2, 4);
-    cout << foo;
-//    foo.clear();
-    cout << "foo\n" << foo;
-//    foo.set_value(1,1,1);
-    cout << "bar\n" << bar;
-    cout << "foo\n" << foo;
+//    int i = 8;
+    double arr[] = {1,2,3,4,5,6,7,8,9};
+//    double arr2[] = {1,2,3,4,5,6,7,8,9};
+    matrix foo(arr, 9);
+    matrix bar(3,1);
+//
+//    cout << "foo\n" << foo;
+//    cout << "bar\n" << bar;
 
-    if (bar == foo) {
-        cout << "foo bar match";
-    } else {
-        cout << "foo bar nono";
-    }
+    cout << "setting values" << endl;
+    bar.set_value(0,0,1);
+    bar.set_value(1,0,2);
+    bar.set_value(2,0,3);
+    cout << "values set" << endl;
+
+
+    cout << "foo\n" << foo;
+    cout << "bar\n" << bar;
+    cout << "multiplying...";
+    foo *= bar;
+    cout << "multiplied" << endl;
+    cout << "foo\n" << foo;
 } catch (char const* e) {
     cout << (e);
 }

@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="Assignment1" targetName="Assignment1" />
@@ -11,31 +29,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="794d116e-1524-426e-817e-b1b9c19b9d70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Assignment1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrix.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrix.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+    <list default="true" id="794d116e-1524-426e-817e-b1b9c19b9d70" name="Default Changelist" comment="Basic Matrix class implemented, currently overloading operators, tolerance check not working right in ==.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Assignment1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Assignment1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +59,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/3522 Object Oriented Programming/sample code/Week2Day1Sample/swap_example" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -70,19 +68,14 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Assignment1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assignment1" TARGET_NAME="Assignment1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assignment1" RUN_TARGET_NAME="Assignment1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -95,22 +88,52 @@
       <option name="presentableId" value="Default" />
       <updated>1602018626963</updated>
       <workItem from="1602018628716" duration="14810000" />
-      <workItem from="1602101635587" duration="3186000" />
+      <workItem from="1602101635587" duration="3288000" />
+      <workItem from="1602105085770" duration="1216000" />
+      <workItem from="1602110540035" duration="14246000" />
+      <workItem from="1602177957069" duration="6000" />
+      <workItem from="1602189457982" duration="5000" />
+      <workItem from="1602196877345" duration="8353000" />
+      <workItem from="1602213710890" duration="2249000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic Matrix class implemented, currently overloading operators, tolerance check not working right in ==.">
+      <created>1602104918951</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602104918951</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic Matrix class implemented, currently overloading operators, tolerance check not working right in ==." />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Matrix class implemented, currently overloading operators, tolerance check not working right in ==." />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#New_File_Extensions" timestamp="1602018919913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#New_File_Extensions/0.0.1920.1040@0.0.1920.1040" timestamp="1602018919913" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1602018649564">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1602130458795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602018649564" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602130458795" />
     <state x="831" y="418" key="Github.ShareDialog" timestamp="1602018665810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -119,45 +142,75 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602018671570" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1602104829041">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1602215949367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602104829041" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1602104829041">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602215949367" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1602215949366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602104829041" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1602104829040">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602215949366" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1602215949366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602104829040" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1602104829041">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602215949366" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1602215949367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602104829041" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1602040883546">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602215949367" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1602215797393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602040883546" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1602040883546">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602215797393" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1602215797393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602040883546" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1602040883546">
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602215797393" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1602215797393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602040883546" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1602040883546">
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602215797393" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1602215797393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602040883546" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1602028107761">
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602215797393" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1602125866665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602028107761" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602125866665" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602104926179">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602104926179" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1602037242015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602037242015" />
+    <state x="736" y="305" key="refactoring.ChangeSignatureDialog" timestamp="1602131047630">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="736" y="305" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602131047630" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>22</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/matrix.cpp</url>
+          <line>205</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="bar" language="ObjectiveC" />
+        <watch expression="m1" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
