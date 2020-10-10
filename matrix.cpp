@@ -6,6 +6,11 @@
 #include "matrix.hpp"
 #include "connectivity_matrix.hpp"
 
+
+// Called in operator ==
+// For a tolerance of .001.
+// Rounding errors were allowing things outside of tolerance to return true.
+const double TOLERANCE = .0009;
 using namespace std;
 
 
@@ -21,7 +26,7 @@ matrix::matrix(): rows(1), cols(1) {
 }
 
 // Square matrix, takes an int n > 0 and returns an empty nxn matrix
-matrix::matrix(int n) {
+matrix::matrix(const int n) {
     // NEEDS ASSERT n > 0
     if (n < 1) { throw "n must be greater than 0";}
     rows = n;
@@ -42,7 +47,7 @@ matrix::matrix(const matrix &copymatrix):matrix(copymatrix.rows, copymatrix.cols
 }
 
 // Variable size empty matrix constructor matrix, takes int c, int r and returns a c x r size matrix
-matrix::matrix(int row_num, int col_num){
+matrix::matrix(const int row_num, const int col_num){
     if (row_num < 1 || col_num < 1) { throw "rows/cols must be greater than 0"; }
     m = new vector<vector<double> > ();
     rows = row_num;
@@ -52,8 +57,8 @@ matrix::matrix(int row_num, int col_num){
     }
 }
 
-
-matrix::matrix(const double vals[], int length):matrix(sqrt(length)) {
+// Creates a matrix from an array, row by row, provided the array is a square number of values
+matrix::matrix(const double vals[], const int length):matrix(sqrt(length)) {
     double n = sqrt(length);
     if (n - (int)sqrt(length) > 0) { throw "array length not an integer square";}
     int i = 0;
@@ -64,16 +69,19 @@ matrix::matrix(const double vals[], int length):matrix(sqrt(length)) {
     }
 }
 
-void matrix::set_value(int row, int col, double val) {
+// Sets a value within the matrix
+void matrix::set_value(const int row, const int col, const double val) {
     if (col >= cols || row >= rows || col < 0 || row < 0) { throw "c/r index out of bounds";}
     (*m)[row][col] = val;
 }
 
-double& matrix::get_value(int row, int col) const {
+// Gets a value from the matrix
+double& matrix::get_value(const int row, const int col) const {
     if (col >= cols || row >= rows || col < 0 || row < 0) { throw "c/r index out of bounds";}
     return (*m)[row][col];
 }
 
+// resets a matrix to complete zero
 void matrix::clear() {
     for (int row = 0; row < rows; row++){
         for (int col = 0; col < cols; col++) {
@@ -82,14 +90,15 @@ void matrix::clear() {
     }
 }
 
+// Destructor deallocates the vector with our values.
 matrix::~matrix() {
     delete m;
 }
 
+// Insertion operator for printing to console
 ostream &operator<<(ostream &os, matrix m) {
     for (int row = 0; row < m.get_rows(); row++){
         for (int col = 0; col < m.get_cols(); col++) {
-//            cout << m.get_value(row, col);
             os << m.get_value(row,col) << " ";
         }
         os << "\n";
@@ -97,18 +106,15 @@ ostream &operator<<(ostream &os, matrix m) {
     return os;
 }
 
+// Boolean operator compare 2 matrices within a certain tolerance as defined above
 bool operator==(matrix &m1, matrix &m2) {
-    // first 3 decimals are significant, rounding errors in doubles are making .001 int .0009
-    const double TOLERANCE = .0009;
     int rows = m1.get_rows();
     int cols = m1.get_cols();
-
     if (rows != m2.get_rows() || cols != m2.get_cols()) {return false;}
     for (int row = 0; row < rows; row++){
         for (int col = 0; col < cols; col++) {
             double v1 = m1.get_value(row, col);
             double v2 = m2.get_value(row, col);
-            // Doesn't work, returns 3.009999999 instead of the 3.001 that actually exists
             if (abs((v1-v2)) >= TOLERANCE){
                 return false;
             }
@@ -117,10 +123,12 @@ bool operator==(matrix &m1, matrix &m2) {
     return true;
 }
 
+// comparison operator
 bool operator!=(matrix &m1, matrix &m2) {
     return !(m1==m2);
 }
 
+// PREFIX: increments every value in a matrix by 1.0, then returns the matrix
 matrix &matrix::operator++() {
     for (int row = 0; row < rows; row++){
         for (int col = 0; col < cols; col++) {
@@ -130,12 +138,14 @@ matrix &matrix::operator++() {
     return *this ;
 }
 
+// POSTFIX: increments the matrix with the prefix operator, but returns the value before incrementation
 matrix matrix::operator++(int) {
     matrix temp(*this);
     operator++();
     return temp;
 }
 
+// PREFIX: decrements every value in a matrix by 1.0, then returns the matrix, cannot decrease below 0.
 matrix &matrix::operator--() {
     for (int row = 0; row < rows; row++){
         for (int col = 0; col < cols; col++) {
@@ -146,12 +156,14 @@ matrix &matrix::operator--() {
     return *this ;
 }
 
+// POSTFIX: decrements the matrix with the prefix operator, but returns the value before decrementation
 matrix matrix::operator--(int) {
     matrix temp(*this);
     operator--();
     return temp;
 }
 
+// swaps all the values between two matrices
 void mySwap(matrix& lhs, matrix& rhs){
     using std::swap;
     swap(lhs.rows, rhs.rows);
@@ -159,11 +171,13 @@ void mySwap(matrix& lhs, matrix& rhs){
     swap(lhs.m, rhs.m);
 }
 
+// uses the = operator to copy and swap values
 matrix &matrix::operator=(matrix m) {
     mySwap(*this, m);
     return *this;
 }
 
+// adds another matrices values to this one
 void matrix::operator+=(const matrix& m1) {
     if (rows != m1.get_rows() || cols != m1.get_cols()){ throw "Matrices are different sizes";}
     for (int row = 0; row < rows; row++){
@@ -173,11 +187,13 @@ void matrix::operator+=(const matrix& m1) {
     }
 }
 
+// adds two matrices together and returns the result
 matrix operator+(matrix lhs, const matrix& rhs) {
     lhs += rhs;
     return lhs;
 }
 
+// Subtracts a matrix from this one and returns the result
 void matrix::operator-=(const matrix &m1) {
     if (rows != m1.get_rows() || cols != m1.get_cols()){ throw "Matrices are different sizes";}
     for (int row = 0; row < rows; row++){
@@ -188,14 +204,13 @@ void matrix::operator-=(const matrix &m1) {
     }
 }
 
+// Subtracts 2 matrices and returns the results
 matrix operator-(matrix lhs, const matrix &rhs) {
     lhs -= rhs;
     return lhs;
 }
 
-// Multiply the rows in the first matrix, and multiply it by the columns in the second
-
-
+// Performs matrix multiplication with this matrix and another, stores the result in this matrix with the swap method.
 void matrix::operator*=(matrix &m1) {
     if (cols != m1.get_rows()) { throw "first matrix' cols don't match second matrix' rows";}
     auto *m2 = new vector<vector<double> >();
@@ -216,11 +231,13 @@ void matrix::operator*=(matrix &m1) {
     delete m2;
 }
 
+// multiplies 2 matrices and returns the result
 matrix operator*(matrix lhs, matrix &rhs) {
     lhs *= rhs;
     return lhs;
 }
 
+// fills this matrix with the given value
 void matrix::fill(const double val) {
     for (int row = 0; row < rows; row++){
         for (int col = 0; col < cols; col++) {
@@ -229,6 +246,7 @@ void matrix::fill(const double val) {
     }
 }
 
+// adds all the values in the matrix and returns the total
 double matrix::sum() {
     double sum = 0;
     for (int row = 0; row < rows; row++){

@@ -223,6 +223,33 @@ matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/matrix.cpp.s
 .PHONY : matrix.cpp.s
 
+rank_matrix.obj: rank_matrix.cpp.obj
+
+.PHONY : rank_matrix.obj
+
+# target to build an object file
+rank_matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/rank_matrix.cpp.obj
+.PHONY : rank_matrix.cpp.obj
+
+rank_matrix.i: rank_matrix.cpp.i
+
+.PHONY : rank_matrix.i
+
+# target to preprocess a source file
+rank_matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/rank_matrix.cpp.i
+.PHONY : rank_matrix.cpp.i
+
+rank_matrix.s: rank_matrix.cpp.s
+
+.PHONY : rank_matrix.s
+
+# target to generate assembly for a file
+rank_matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/rank_matrix.cpp.s
+.PHONY : rank_matrix.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -241,6 +268,9 @@ help:
 	@echo ... matrix.obj
 	@echo ... matrix.i
 	@echo ... matrix.s
+	@echo ... rank_matrix.obj
+	@echo ... rank_matrix.i
+	@echo ... rank_matrix.s
 .PHONY : help
 
 

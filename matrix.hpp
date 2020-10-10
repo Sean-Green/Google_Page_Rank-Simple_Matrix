@@ -13,6 +13,7 @@
 using namespace std;
 
 class matrix {
+private:
 
 protected:
     vector<vector<double> > * m;
@@ -23,7 +24,7 @@ public:
     matrix();
     matrix(int n);
     matrix(const matrix& copymatrix);
-    matrix(int c, int r);
+    matrix(int c,int r);
     matrix(const double vals[], int length);
     virtual void set_value(int c, int r, double val);
     double& get_value(int c, int r) const;

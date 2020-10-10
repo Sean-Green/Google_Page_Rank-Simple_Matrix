@@ -7,6 +7,7 @@
 #include <iostream>
 #include "connectivity_matrix.hpp"
 
+// Constructor, just calls the parent constructor, uses the set_value function to detect bad input
 connectivity_matrix::connectivity_matrix(double *arr, int length) :matrix(sqrt(length)){
     int i = 0;
     for (int r = 0; r < get_rows(); r++){
@@ -20,6 +21,7 @@ connectivity_matrix::connectivity_matrix(double *arr, int length) :matrix(sqrt(l
     }
 }
 
+// Connectivity matrix only takes 1's and 0's, and this setter checks for that.
 void connectivity_matrix::set_value(int row, int col, double val) {
     if (val != 0 && val != 1) {
         throw "connectivity matrix set_value only takes 1's and 0's";
@@ -27,8 +29,9 @@ void connectivity_matrix::set_value(int row, int col, double val) {
     matrix::set_value(row, col, val);
 }
 
-matrix connectivity_matrix::get_pageRank() {
-
+// Used by the rank matrix constructor
+// Uses googles page rank algorithm to return a matrix of website ranks based on the connectivity matrix
+matrix connectivity_matrix::get_page_rank() {
     matrix left_stochastic(rows);
     matrix teleport(rows);
     double walk_chance= 0.85;

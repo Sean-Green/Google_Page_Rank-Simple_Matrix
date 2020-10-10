@@ -8,7 +8,14 @@ CMakeFiles/Assignment1.dir/connectivity_matrix.cpp.obj: ../matrix.hpp
 CMakeFiles/Assignment1.dir/main.cpp.obj: ../connectivity_matrix.hpp
 CMakeFiles/Assignment1.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Assignment1.dir/main.cpp.obj: ../matrix.hpp
+CMakeFiles/Assignment1.dir/main.cpp.obj: ../rank_matrix.hpp
 
+CMakeFiles/Assignment1.dir/matrix.cpp.obj: ../connectivity_matrix.hpp
 CMakeFiles/Assignment1.dir/matrix.cpp.obj: ../matrix.cpp
 CMakeFiles/Assignment1.dir/matrix.cpp.obj: ../matrix.hpp
+
+CMakeFiles/Assignment1.dir/rank_matrix.cpp.obj: ../connectivity_matrix.hpp
+CMakeFiles/Assignment1.dir/rank_matrix.cpp.obj: ../matrix.hpp
+CMakeFiles/Assignment1.dir/rank_matrix.cpp.obj: ../rank_matrix.cpp
+CMakeFiles/Assignment1.dir/rank_matrix.cpp.obj: ../rank_matrix.hpp
 

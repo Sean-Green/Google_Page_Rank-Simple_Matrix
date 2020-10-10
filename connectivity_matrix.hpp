@@ -13,15 +13,10 @@ class connectivity_matrix : public matrix {
 public:
     connectivity_matrix(double arr[], int length);
     void set_value(int row, int col, double val);
-    matrix get_pageRank();
+    matrix get_page_rank();
+
 };
-class rank_matrix: public matrix {
-public:
-    rank_matrix(connectivity_matrix& cm) {
-        if (cm.get_rows() > 0 && cm.get_cols() == 1)
-    }
-    friend ostream& operator<<(ostream& os, matrix);
-};
+
 
 
 #endif //ASSIGNMENT1_CONNECTIVITY_MATRIX_HPP

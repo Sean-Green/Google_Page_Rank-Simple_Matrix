@@ -95,6 +95,12 @@
 		<Unit filename="C:/Users/seanj/CLionProjects/Assignment1/matrix.hpp">
 			<Option target="Assignment1"/>
 		</Unit>
+		<Unit filename="C:/Users/seanj/CLionProjects/Assignment1/rank_matrix.cpp">
+			<Option target="Assignment1"/>
+		</Unit>
+		<Unit filename="C:/Users/seanj/CLionProjects/Assignment1/rank_matrix.hpp">
+			<Option target="Assignment1"/>
+		</Unit>
 		<Unit filename="C:/Users/seanj/CLionProjects/Assignment1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

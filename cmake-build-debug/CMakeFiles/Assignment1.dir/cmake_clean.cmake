@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Assignment1.dir/connectivity_matrix.cpp.obj"
   "CMakeFiles/Assignment1.dir/main.cpp.obj"
   "CMakeFiles/Assignment1.dir/matrix.cpp.obj"
+  "CMakeFiles/Assignment1.dir/rank_matrix.cpp.obj"
   "libAssignment1.dll.a"
 )
 
