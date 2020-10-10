@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/seanj/CLionProjects/Assignment1/connectivity_matrix.cpp">
+			<Option target="Assignment1"/>
+		</Unit>
+		<Unit filename="C:/Users/seanj/CLionProjects/Assignment1/connectivity_matrix.hpp">
+			<Option target="Assignment1"/>
+		</Unit>
 		<Unit filename="C:/Users/seanj/CLionProjects/Assignment1/main.cpp">
 			<Option target="Assignment1"/>
 		</Unit>

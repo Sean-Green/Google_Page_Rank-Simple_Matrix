@@ -142,6 +142,33 @@ Assignment1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/build
 .PHONY : Assignment1/fast
 
+connectivity_matrix.obj: connectivity_matrix.cpp.obj
+
+.PHONY : connectivity_matrix.obj
+
+# target to build an object file
+connectivity_matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/connectivity_matrix.cpp.obj
+.PHONY : connectivity_matrix.cpp.obj
+
+connectivity_matrix.i: connectivity_matrix.cpp.i
+
+.PHONY : connectivity_matrix.i
+
+# target to preprocess a source file
+connectivity_matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/connectivity_matrix.cpp.i
+.PHONY : connectivity_matrix.cpp.i
+
+connectivity_matrix.s: connectivity_matrix.cpp.s
+
+.PHONY : connectivity_matrix.s
+
+# target to generate assembly for a file
+connectivity_matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/connectivity_matrix.cpp.s
+.PHONY : connectivity_matrix.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -205,6 +232,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Assignment1
+	@echo ... connectivity_matrix.obj
+	@echo ... connectivity_matrix.i
+	@echo ... connectivity_matrix.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -14,7 +14,7 @@ using namespace std;
 
 class matrix {
 
-private:
+protected:
     vector<vector<double> > * m;
     int rows;
     int cols;
@@ -25,7 +25,7 @@ public:
     matrix(const matrix& copymatrix);
     matrix(int c, int r);
     matrix(const double vals[], int length);
-    void set_value(int c, int r, double val);
+    virtual void set_value(int c, int r, double val);
     double& get_value(int c, int r) const;
     void clear();
     ~matrix();
@@ -46,6 +46,8 @@ public:
     friend matrix operator*(matrix lhs, matrix& rhs);
     int get_rows() const{return rows;}
     int get_cols() const{return cols;}
+    void fill(double val);
+    double sum();
 };
 
 

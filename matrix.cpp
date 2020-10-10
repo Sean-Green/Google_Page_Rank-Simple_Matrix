@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include "matrix.hpp"
+#include "connectivity_matrix.hpp"
+
 using namespace std;
 
 
@@ -217,6 +219,24 @@ void matrix::operator*=(matrix &m1) {
 matrix operator*(matrix lhs, matrix &rhs) {
     lhs *= rhs;
     return lhs;
+}
+
+void matrix::fill(const double val) {
+    for (int row = 0; row < rows; row++){
+        for (int col = 0; col < cols; col++) {
+            (*m)[row][col] = val;
+        }
+    }
+}
+
+double matrix::sum() {
+    double sum = 0;
+    for (int row = 0; row < rows; row++){
+        for (int col = 0; col < cols; col++) {
+            sum += (*m)[row][col];
+        }
+    }
+    return sum;
 }
 
 

@@ -1,31 +1,27 @@
 #include <iostream>
+#include <fstream>
 #include "matrix.hpp"
+#include "connectivity_matrix.hpp"
+
 int main() {
-try {
-//    int i = 8;
-    double arr[] = {1,2,3,4,5,6,7,8,9};
-//    double arr2[] = {1,2,3,4,5,6,7,8,9};
-    matrix foo(arr, 9);
-    matrix bar(3,1);
-//
-//    cout << "foo\n" << foo;
-//    cout << "bar\n" << bar;
-
-    cout << "setting values" << endl;
-    bar.set_value(0,0,1);
-    bar.set_value(1,0,2);
-    bar.set_value(2,0,3);
-    cout << "values set" << endl;
-
-
-    cout << "foo\n" << foo;
-    cout << "bar\n" << bar;
-    cout << "multiplying...";
-    foo *= bar;
-    cout << "multiplied" << endl;
-    cout << "foo\n" << foo;
-} catch (char const* e) {
-    cout << (e);
-}
+    ifstream text("../connectivity.txt");
+    if (text) {
+        cout << "fileread!" << endl;
+    }
+    double temp;
+    vector<double> vect;
+    do {
+    text >> temp;
+    cout << temp << endl;
+    vect.push_back(temp);
+    } while (text);
+    vect.pop_back();
+    cout << vect.size() << endl;
+    // Turns out you can point at a vectors address to get an array.
+    double *arr = &vect[0];
+    connectivity_matrix m(arr,vect.size());
+    cout << "Connectivity Matrix:\n" << m;
+    cout << "Rank:\n" << m.get_pageRank();
     return 0;
+
 }
