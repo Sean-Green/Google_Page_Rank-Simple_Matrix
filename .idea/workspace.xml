@@ -29,28 +29,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="794d116e-1524-426e-817e-b1b9c19b9d70" name="Default Changelist" comment="Implemented connectivity matrix and working on an inner rank_matrix to handle the insertion operator for a rank class.">
-      <change afterPath="$PROJECT_DIR$/rank_matrix.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rank_matrix.hpp" afterDir="false" />
+    <list default="true" id="794d116e-1524-426e-817e-b1b9c19b9d70" name="Default Changelist" comment="All classes finished, commented, design.pdf added to repository.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Assignment1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Assignment1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Assignment1.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectivity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/connectivity.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectivity_matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/connectivity_matrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectivity_matrix.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/connectivity_matrix.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,20 +58,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/3522 Object Oriented Programming/sample code/Week2Day1Sample/swap_example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\seanj\CLionProjects\Assignment1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\seanj\CLionProjects\Assignment1" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Assignment1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assignment1" TARGET_NAME="Assignment1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assignment1" RUN_TARGET_NAME="Assignment1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -120,7 +98,7 @@
       <workItem from="1602196877345" duration="8353000" />
       <workItem from="1602213710890" duration="5367000" />
       <workItem from="1602268033982" duration="1092000" />
-      <workItem from="1602278245568" duration="15443000" />
+      <workItem from="1602278245568" duration="15749000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Matrix class implemented, currently overloading operators, tolerance check not working right in ==.">
       <created>1602104918951</created>
@@ -143,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602292044893</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="All classes finished, commented, design.pdf added to repository.">
+      <created>1602297458839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602297458839</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +150,8 @@
     <MESSAGE value="Basic Matrix class implemented, currently overloading operators, tolerance check not working right in ==." />
     <MESSAGE value="Matrix Class fully working." />
     <MESSAGE value="Implemented connectivity matrix and working on an inner rank_matrix to handle the insertion operator for a rank class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented connectivity matrix and working on an inner rank_matrix to handle the insertion operator for a rank class." />
+    <MESSAGE value="All classes finished, commented, design.pdf added to repository." />
+    <option name="LAST_COMMIT_MESSAGE" value="All classes finished, commented, design.pdf added to repository." />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1602284026264">
@@ -188,46 +174,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602018671570" />
-    <state width="1877" height="373" key="GridCell.Tab.0.bottom" timestamp="1602294906046">
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1602297512402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602294906046" />
-    <state width="1877" height="373" key="GridCell.Tab.0.center" timestamp="1602294906046">
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602297512402" />
+    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1602297512402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602294906046" />
-    <state width="1877" height="373" key="GridCell.Tab.0.left" timestamp="1602294906046">
+    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602297512402" />
+    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1602297512401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602294906046" />
-    <state width="1877" height="373" key="GridCell.Tab.0.right" timestamp="1602294906046">
+    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602297512401" />
+    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1602297512402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602294906046" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1602286043069">
+    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602297512402" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1602297512403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602286043069" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1602286043069">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602297512403" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1602297512403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602286043069" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1602286043069">
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602297512403" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1602297512403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602286043069" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1602286043069">
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602297512403" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1602297512403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602286043069" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602297512403" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1602125866665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602125866665" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602292047725">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602297461974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602292047725" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602297461974" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1602037242015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
